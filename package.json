@@ -1,0 +1,19 @@
+{
+  "name": "todo-check-rec",
+  "version": "1.0.0",
+  "description": "A simple script that outputs the absolute path of any file that contains the word \"TODO\" in its content. # How to use: make sure to copy `recursive-check.js` to your desired directory then run: ```sh $ node ./recursive-check.js ```",
+  "main": "todo-check-rec.js",
+  "scripts": {
+    "test": "node src/test/todo-check-rec-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fnassim/todo-check-rec.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fnassim/todo-check-rec/issues"
+  },
+  "homepage": "https://github.com/fnassim/todo-check-rec#readme"
+}
