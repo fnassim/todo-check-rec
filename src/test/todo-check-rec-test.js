@@ -1,5 +1,6 @@
 const todoCheckRec = require('../todo-check-rec');
 const assert = require('assert');
+const Path = require('path');
 
 const testFlattenDeep = () => {
     const arr1 = [1, 2, 3, [4, 5, [6]], 7];
@@ -26,13 +27,13 @@ const testFlattenDeepFail = () => {
 };
 
 const testGetFilesRec = () => {
-    const testPathOutput = 'src/test/mock/test';
+    const testPathOutput = Path.normalize('src/test/mock/test');
 
     try {
         assert.equal(todoCheckRec.getFilesRec('./src/test/mock'), testPathOutput);
         console.log('testGetFilesRec: Passed.');
     } catch (error) {
-        console.error('testGetFilesRec: Failed. ');
+        console.error('testGetFilesRec: Failed. ' + todoCheckRec.getFilesRec('./src/test/mock'));
     }
 };
 
