@@ -47,31 +47,7 @@ const testGetFilesRecFail = () => {
     }
 };
 
-const testOutputFilesContainingTodo = () => {
-    const testPathOutput = '/Users/fadel/Desktop/todo-check-rec/src/src/test/mock/test';
-
-    try {
-        assert.equal(todoCheckRec.outputFilesContainingTodo('./src/test/mock'), testPathOutput);
-        console.log('testOutputFilesContainingTodo: Passed.');
-    } catch (error) {
-        console.error('testOutputFilesContainingTodo: Failed. ');
-    }
-};
-
-const testOutputFilesContainingTodoFail = () => {
-    const testPathOutput = '';
-
-    try {
-        assert.notEqual(todoCheckRec.outputFilesContainingTodo('./src/test/mock'), testPathOutput);
-        console.log('testOutputFilesContainingTodoFail: Passed.');
-    } catch (error) {
-        console.error('testOutputFilesContainingTodoFail: Failed. ');
-    }
-};
-
 testFlattenDeepFail();
 testFlattenDeep();
 testGetFilesRec();
 testGetFilesRecFail();
-testOutputFilesContainingTodo();
-testOutputFilesContainingTodoFail();
