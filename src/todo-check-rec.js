@@ -33,7 +33,6 @@ const outputFilesContainingTodo = (path) => {
 outputFilesContainingTodo(DEFAULT_PATH).map((item) => {console.log(item)});
 
 module.exports = {
-    outputFilesContainingTodo: outputFilesContainingTodo,
     getFilesRec : getFilesRec,
     flattenDeep : flattenDeep
 };
